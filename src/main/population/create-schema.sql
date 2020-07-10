@@ -29,12 +29,52 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `notices` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `header_picture` varchar(255),
+        `links` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `technology_records` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sector` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` varchar(255),
+        `inventors_name` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tool_records` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sector` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` varchar(255),
+        `inventors_name` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
+        `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

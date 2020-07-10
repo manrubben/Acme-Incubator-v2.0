@@ -3,10 +3,20 @@ package acme.entities;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import acme.framework.entities.DomainEntity;
+import lombok.Getter;
+import lombok.Setter;
 
+@Entity
+@Getter
+@Setter
 public class Notices extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
@@ -21,10 +31,13 @@ public class Notices extends DomainEntity {
 	@NotBlank
 	private String				title;
 
-	@NotBlank
+	@DateTimeFormat(pattern = "dd-MM-yyyy HH:mm")
+	@Past
+	@NotNull
 	private LocalDateTime		creation;
 
-	@NotBlank
+	@DateTimeFormat(pattern = "dd-MM-yyyy HH:mm")
+	@NotNull
 	private LocalDateTime		deadline;
 
 	@NotBlank

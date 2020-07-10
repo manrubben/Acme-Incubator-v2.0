@@ -36,6 +36,13 @@ master.menu.anonymous.favourite-link.alvaro = Enlace favorito de Alvaro
 master.menu.anonymous.favourite-link.josema = Enlace favorito de Josema
 master.menu.anonymous.favourite-link.guille = Enlace favorito de Guille
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.list-notices = Listar noticias
+master.menu.authenticated.list-technology-records = Listar registros tecnológicos
+master.menu.authenticated.list-tool-records = Listar registros de herramientas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

@@ -27,7 +27,13 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `notices`;
+
     drop table if exists `provider`;
+
+    drop table if exists `technology_records`;
+
+    drop table if exists `tool_records`;
 
     drop table if exists `user_account`;
 

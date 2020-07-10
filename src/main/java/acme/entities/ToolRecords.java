@@ -1,13 +1,19 @@
 
 package acme.entities;
 
+import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 import acme.framework.entities.DomainEntity;
+import lombok.Getter;
+import lombok.Setter;
 
+@Entity
+@Getter
+@Setter
 public class ToolRecords extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
@@ -32,6 +38,7 @@ public class ToolRecords extends DomainEntity {
 	private String				website;
 
 	@Email
+	@NotBlank
 	private String				email;
 
 	@NotBlank
@@ -39,6 +46,6 @@ public class ToolRecords extends DomainEntity {
 
 	@Min(value = -5)
 	@Max(value = 5)
-	private Double				stars;
+	private Integer				stars;
 
 }

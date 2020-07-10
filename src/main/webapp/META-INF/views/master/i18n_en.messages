@@ -36,6 +36,13 @@ master.menu.anonymous.favourite-link.alvaro = Alvaro's favourite link
 master.menu.anonymous.favourite-link.josema = Josema's favourite link
 master.menu.anonymous.favourite-link.guille = Guille's favourite link
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.list-notices = List notices
+master.menu.authenticated.list-technology-records = List technology records
+master.menu.authenticated.list-tool-records = List tool records
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
