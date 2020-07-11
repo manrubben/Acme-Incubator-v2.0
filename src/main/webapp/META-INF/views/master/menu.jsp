@@ -25,6 +25,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.alvaro" action="https://github.com/alvdiaasc97"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.josema" action="https://github.com/josgalbal"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.guille" action="https://github.com/guipavvar"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.technology-records.list" action="/anonymous/technology-records/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
@@ -37,6 +39,7 @@
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.notices" action="/administrator/notices/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
