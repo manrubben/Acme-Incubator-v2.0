@@ -1,14 +1,17 @@
 
 package acme.entities;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
-import org.springframework.format.annotation.DateTimeFormat;
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -26,21 +29,25 @@ public class Notices extends DomainEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
+	@URL
+	@Length(max = 255)
 	private String				headerPicture;
 
 	@NotBlank
+	@Length(max = 255)
 	private String				title;
 
-	@DateTimeFormat(pattern = "dd-MM-yyyy HH:mm")
+	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
 	@Past
-	@NotNull
-	private LocalDateTime		creation;
+	private Date				creation;
 
-	@DateTimeFormat(pattern = "dd-MM-yyyy HH:mm")
+	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
-	private LocalDateTime		deadline;
+	private Date				deadline;
 
 	@NotBlank
+	@Length(max = 255)
 	private String				body;
 
 	private String				links;

@@ -318,4 +318,24 @@ Challenge
 + rookieReward: Money {NotNull, Valid}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>469</x>
+      <y>364</y>
+      <w>182</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Notices
+--
++ headerPicture: String {NotBlank,URL, Length}
++ title: String {NotBlank, Length}
++ creation: Date {Temporal,Past, NotNull}
++ deadline: Date {Temporal, NotNull}
++ body: String {NotBlank, Length}
++ link: String {Length}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

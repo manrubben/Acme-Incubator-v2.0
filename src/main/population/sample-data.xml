@@ -22,8 +22,8 @@
 	<bean id="notice01" class="acme.entities.Notices">
 		<property name="headerPicture" value="https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2020/07/10/Recortada/img_dsempere_20200630-151946_imagenes_lv_otras_fuentes_covid-rebrotes2-143-U442461271936j6E-U482204711624jJF-992x558@LaVanguardia-Web-Portada.jpg" />
 		<property name="title" value="Coronavirus. Nuevos rebrotes" />
-		<property name="creation" value="10-07-2020 16:13" />
-		<property name="deadline" value="10-07-2022 16:13" />
+		<property name="creation" value="2010/06/20 20:11" />
+		<property name="deadline" value="2010/06/20 20:11" />
 		<property name="body" value="This is a sample notice" />
 		<property name="links">
 			<null />
@@ -88,7 +88,7 @@
 	<!-- Challenge -->
 	
 	<bean id="challenge01" class="acme.entities.challenges.Challenge">
-		<property name="title" value="Odisea" />
+		<property name="title" value="Challenge 1" />
 		<property name="deadline" value="2040/06/20 23:11" />
 		<property name="description" value="blablabla" />
 		<property name="expertGoal" value="Experto" />

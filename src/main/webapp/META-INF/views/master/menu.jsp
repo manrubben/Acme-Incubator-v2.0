@@ -27,6 +27,9 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.guille" action="https://github.com/guipavvar"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.technology-records.list" action="/anonymous/technology-records/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list"/>
+			<acme:menu-separator/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
