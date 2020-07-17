@@ -43,6 +43,7 @@ master.menu.authenticated.list-notices = List notices
 master.menu.authenticated.list-technology-records = List technology records
 master.menu.authenticated.list-tool-records = List tool records
 master.menu.authenticated.overtures = List overtures
+master.menu.authenticated.challenge.list = List challenges
 
 # master.menu.administrator ###################################################
 

@@ -85,6 +85,32 @@
 		<property name="email" value="josema@gmail.com"/>
 	</bean>
 	
+	<!-- Challenge -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Odisea" />
+		<property name="deadline" value="2040/06/20 23:11" />
+		<property name="description" value="blablabla" />
+		<property name="expertGoal" value="Experto" />
+		<property name="averageGoal" value="Average" />
+		<property name="rookieGoal" value="Rookie" />
+		<property name="expertReward" value="00004000.00 EUR" />
+		<property name="averageReward" value="00002000.00 EUR" />
+		<property name="rookieReward" value="00001000.00 EUR" />
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Challenge 2" />
+		<property name="deadline" value="2030/06/20 20:11" />
+		<property name="description" value="Challenge" />
+		<property name="expertGoal" value="Experto" />
+		<property name="averageGoal" value="Average" />
+		<property name="rookieGoal" value="Rookie" />
+		<property name="expertReward" value="00040000.00 EUR" />
+		<property name="averageReward" value="00030000.00 EUR" />
+		<property name="rookieReward" value="00020000.00 EUR" />
+	</bean>
+	
 	
 
 </beans>
