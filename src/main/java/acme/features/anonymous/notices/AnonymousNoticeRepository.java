@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.notice;
+package acme.features.anonymous.notices;
 
 import java.util.Collection;
 

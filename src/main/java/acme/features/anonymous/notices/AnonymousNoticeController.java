@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.notice;
+package acme.features.anonymous.notices;
 
 import javax.annotation.PostConstruct;
 
@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/notice/")
+@RequestMapping("/anonymous/notices/")
 public class AnonymousNoticeController extends AbstractController<Anonymous, Notices> {
 
 	@Autowired

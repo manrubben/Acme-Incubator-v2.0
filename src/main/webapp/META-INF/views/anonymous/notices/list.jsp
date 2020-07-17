@@ -16,5 +16,5 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="anonymous.notice.list.label.title" path="title" width="40%"/>
+	<acme:list-column code="anonymous.notice.form.label.title" path="title" width="40%"/>
 </acme:list>

@@ -28,7 +28,7 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.technology-records.list" action="/anonymous/technology-records/list"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notices/list"/>
 			<acme:menu-separator/>
 		</acme:menu-option>
 		

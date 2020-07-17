@@ -23,5 +23,5 @@
 	<acme:form-textbox code="anonymous.notice.form.label.body" path="body"/>
 	<acme:form-url code="anonymous.notice.form.label.links" path="links"/>
 	
-	<acme:form-return code="anonymous.notices.form.button.return"/>
+	<acme:form-return code="anonymous.notice.form.button.return"/>
 </acme:form>

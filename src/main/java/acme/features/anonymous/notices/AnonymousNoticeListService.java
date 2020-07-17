@@ -1,5 +1,7 @@
 
-package acme.features.anonymous.notice;
+package acme.features.anonymous.notices;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,10 +10,10 @@ import acme.entities.Notices;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousNoticeShowService implements AbstractShowService<Anonymous, Notices> {
+public class AnonymousNoticeListService implements AbstractListService<Anonymous, Notices> {
 
 	@Autowired
 	private AnonymousNoticeRepository repository;
@@ -30,18 +32,17 @@ public class AnonymousNoticeShowService implements AbstractShowService<Anonymous
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "headerPicture", "title", "creation", "deadline", "body", "links");
+		request.unbind(entity, model, "title");
+
 	}
 
 	@Override
-	public Notices findOne(final Request<Notices> request) {
+	public Collection<Notices> findMany(final Request<Notices> request) {
 		assert request != null;
 
-		Notices result;
-		int id;
+		Collection<Notices> result;
 
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		result = this.repository.findManyAll();
 
 		return result;
 	}
