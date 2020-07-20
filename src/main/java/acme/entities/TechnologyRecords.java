@@ -2,6 +2,8 @@
 package acme.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.Index;
+import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -14,38 +16,39 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = { @Index(columnList = "id, title") })
 public class TechnologyRecords extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
-	private static final long	serialVersionUID	= 1L;
+	private static final long serialVersionUID = 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	private String				title;
+	private String title;
 
 	@NotBlank
-	private String				activitySector;
+	private String activitySector;
 
 	@NotBlank
-	private String				inventorsName;
+	private String inventorsName;
 
 	@NotBlank
-	private String				description;
+	private String description;
 
 	@NotBlank
-	private String				website;
+	private String website;
 
 	@Email
 	@NotBlank
-	private String				email;
+	private String email;
 
 	@NotBlank
-	private String				indication;
+	private String indication;
 
 	@Min(value = -5)
 	@Max(value = 5)
-	private Integer				stars;
+	private Integer stars;
 
 }
