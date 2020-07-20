@@ -26,29 +26,27 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.alvaro" action="https://github.com/alvdiaasc97"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.josema" action="https://github.com/josgalbal"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.guille" action="https://github.com/guipavvar"/>
-			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.technology-records.list" action="/anonymous/technology-records/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.tool-records.list" action="/anonymous/tool-records/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.notices.list" action="/anonymous/notices/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated"
 			access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-notices"
 				action="/authenticated/notices/list" />
-			<acme:menu-separator />
 			<acme:menu-suboption
 				code="master.menu.authenticated.list-technology-records"
 				action="/authenticated/technology-records/list" />
-			<acme:menu-separator />
 			<acme:menu-suboption
 				code="master.menu.authenticated.list-tool-records"
 				action="/authenticated/tool-records/list" />
-			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.authenticated.overtures"
 				action="/authenticated/overtures/list" />
-			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.authenticated.inquiries"
 				action="/authenticated/inquiries/list" />
+			<acme:menu-suboption code="master.menu.authenticated.challenges"
+				action="/authenticated/challenges/list" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator"
