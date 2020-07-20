@@ -16,12 +16,13 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
-	<acme:form-url code="authenticated.notices.form.label.headerPicture" path="headerPicture"/>
-	<acme:form-textbox code="authenticated.notices.form.label.title" path="title"/>
-	<acme:form-moment code="authenticated.notices.form.label.creation" path="creation"/>
-	<acme:form-moment code="authenticated.notices.form.label.deadline" path="deadline"/>
-	<acme:form-textbox code="authenticated.notices.form.label.body" path="body"/>
-	<acme:form-url code="authenticated.notices.form.label.links" path="links"/>
+	<acme:form-url code="authenticated.inquiries.form.label.headerPicture" path="headerPicture"/>
+	<acme:form-textbox code="authenticated.inquiries.form.label.title" path="title"/>
+	<acme:form-moment code="authenticated.inquiries.form.label.creation" path="creation"/>
+	<acme:form-moment code="authenticated.inquiries.form.label.deadline" path="deadline"/>
+	<acme:form-money code="authenticated.inquiries.form.label.moneyMin" path="moneyMin"/>
+	<acme:form-money code="authenticated.inquiries.form.label.moneyMax" path="moneyMax"/>
+	<acme:form-textbox code="authenticated.inquiries.form.label.email" path="email"/>
 	
-	<acme:form-return code="authenticated.notices.form.button.return"/>
+	<acme:form-return code="authenticated.inquiries.form.button.return"/>
 </acme:form>
