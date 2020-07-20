@@ -25,7 +25,7 @@ import acme.framework.entities.Authenticated;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/administrator/inquiries/")
+@RequestMapping("/authenticated/inquiries/")
 public class AuthenticatedInquiriesController extends AbstractController<Authenticated, Inquiries> {
 
 	// Internal state ---------------------------------------------------------

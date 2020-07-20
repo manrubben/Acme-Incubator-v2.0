@@ -55,8 +55,8 @@ public class Inquiries extends DomainEntity {
 	@Valid
 	private Money moneyMax;
 
+	@NotBlank
 	@Email
-	@Valid
 	private String email;
 
 }
