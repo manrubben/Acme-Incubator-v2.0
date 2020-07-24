@@ -30,6 +30,7 @@ public class Inquiries extends DomainEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
+	@Length(max = 255)
 	private String				title;
 
 	@DateTimeFormat(pattern = "dd-MM-yyyy HH:mm")
