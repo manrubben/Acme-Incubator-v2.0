@@ -8,6 +8,10 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -16,39 +20,47 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table(indexes = { @Index(columnList = "id, title") })
+@Table(indexes = {
+	@Index(columnList = "id, title")
+})
 public class TechnologyRecords extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
-	private static final long serialVersionUID = 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	private String title;
+	@Length(max = 255)
+	private String				title;
+
+	@NotNull
+	private ActivitySector		activitySector;
 
 	@NotBlank
-	private String activitySector;
+	@Length(max = 255)
+	private String				inventorsName;
 
 	@NotBlank
-	private String inventorsName;
+	@Length(max = 255)
+	private String				description;
 
+	@URL
 	@NotBlank
-	private String description;
-
-	@NotBlank
-	private String website;
+	@Length(max = 255)
+	private String				website;
 
 	@Email
 	@NotBlank
-	private String email;
+	@Length(max = 255)
+	private String				email;
 
-	@NotBlank
-	private String indication;
+	@NotNull
+	private Indication			indication;
 
 	@Min(value = -5)
 	@Max(value = 5)
-	private Integer stars;
+	private Integer				stars;
 
 }
