@@ -1,8 +1,3 @@
-<%-- elreyrata 25.10.19
-
-		list.jsp
-
- --%>
  
 <%@page language="java"%>
 
