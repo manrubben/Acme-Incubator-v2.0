@@ -55,8 +55,12 @@
 				action="/administrator/user-account/list" />
 			<acme:menu-suboption code="master.menu.administrator.notices"
 				action="/administrator/notices/list" />
+				<acme:menu-suboption code="master.menu.administrator.configuration"
+				action="/administrator/configuration/list" />
 			<acme:menu-suboption code="master.menu.administrator.shutdown"
 				action="/master/shutdown" />
+				
+			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider"
