@@ -10,6 +10,11 @@
 
 anonymous.technology-records.list.label.title = Título
 anonymous.technology-records.list.label.activitySector = Sector de Actividad
+anonymous.technology-records.list.label.inventorsName = Inventor
+anonymous.technology-records.list.label.description = Descripción
+anonymous.technology-records.list.label.website = Sitio Web
+anonymous.technology-records.list.label.email = Email
+anonymous.technology-records.list.label.indication = Indicación
 anonymous.technology-records.list.label.stars = Estrellas
 
 anonymous.technology-records.form.label.title = Título:
