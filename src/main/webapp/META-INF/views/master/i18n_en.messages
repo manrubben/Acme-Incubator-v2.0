@@ -10,7 +10,7 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #FFE97F
 
 # master.welcome ##############################################################
 
@@ -53,8 +53,8 @@ master.menu.authenticated.challenges = List challenges
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
-master.menu.administrator.shutdown = Shut down
 master.menu.administrator.notices = List notices
+master.menu.administrator.shutdown = Shut down
 
 # master.menu.provider ########################################################
 
@@ -91,7 +91,7 @@ master.footer.label.spanish = Spanish
 
 master.company.title = La compañía
 master.company.text = \
-	Acme Incubator, Inc. is a fictitious fictitious company that provides a \
+	Acme Incubator, Inc. is a fictitious company that provides a \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
 master.company.name = Acme Incubator, Inc.
