@@ -39,7 +39,7 @@
 			value="This is a sample description" />
 		<property name="website" value="http://www.peter.com" />
 		<property name="email" value="peter@gmail.com" />
-		<property name="indication" value="open-source" />
+		<property name="indication" value="open_source" />
 		<property name="stars" value="5" />
 	</bean>
 

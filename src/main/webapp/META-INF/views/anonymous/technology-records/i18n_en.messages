@@ -10,11 +10,16 @@
 
 anonymous.technology-records.list.label.title = Title
 anonymous.technology-records.list.label.activitySector = Activity Sector
+anonymous.technology-records.list.label.inventorsName = Inventors Name
+anonymous.technology-records.list.label.description = Description
+anonymous.technology-records.list.label.website = Website
+anonymous.technology-records.list.label.email = Email
+anonymous.technology-records.list.label.indication = Indication
 anonymous.technology-records.list.label.stars = Stars
 
 anonymous.technology-records.form.label.title = Title:
 anonymous.technology-records.form.label.activitySector = Activity Sector:
-anonymous.technology-records.form.label.inventorsName = inventorsName:
+anonymous.technology-records.form.label.inventorsName = Inventors Name:
 anonymous.technology-records.form.label.description = Description:
 anonymous.technology-records.form.label.website = Website:
 anonymous.technology-records.form.label.email = Email:
