@@ -33,13 +33,13 @@
 	<bean id="technologyRecord01"
 		class="acme.entities.TechnologyRecords">
 		<property name="title" value="Sample Technology Record" />
-		<property name="activitySector" value="Sector 1" />
+		<property name="activitySector" value="Science" />
 		<property name="inventorsName" value="Peter" />
 		<property name="description"
 			value="This is a sample description" />
 		<property name="website" value="http://www.peter.com" />
 		<property name="email" value="peter@gmail.com" />
-		<property name="indication" value="open-source" />
+		<property name="indication" value="open_source" />
 		<property name="stars" value="5" />
 	</bean>
 
