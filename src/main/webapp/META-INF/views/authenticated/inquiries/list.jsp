@@ -17,4 +17,5 @@
 
 <acme:list>
 	<acme:list-column code="authenticated.inquiries.list.label.title" path="title" width="40%"/>
+	
 </acme:list>

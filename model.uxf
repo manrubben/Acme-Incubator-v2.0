@@ -430,7 +430,7 @@ Overtures
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Configuration
 --
-+ spamWords: String {NotNull, Lenght}
++ spamWords: String {NotBlank}
 + spamThreshold : Double {Range, Digits}
 + isSpam: boolean {Transient}</panel_attributes>
     <additional_attributes/>
