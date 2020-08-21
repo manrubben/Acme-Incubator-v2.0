@@ -9,9 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Transient;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
-import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
 
 import acme.framework.entities.DomainEntity;
@@ -35,11 +33,10 @@ public class Configuration extends DomainEntity {
 	private String				spamWords;
 
 	@Range(min = 0, max = 1)
-	@Digits(integer = 1, fraction = 3)
+	@Digits(integer = 1, fraction = 3) // Redondear números fraccionarios con la regla del redondeo estándar
 	private Double				spamThreshold;
-	
+
 	@NotBlank
-	@Length(max = 255)
 	private String				activitySectors;
 
 
