@@ -405,7 +405,7 @@ Notices
       <x>792</x>
       <y>858</y>
       <w>429</w>
-      <h>165</h>
+      <h>176</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Overtures
@@ -414,7 +414,8 @@ Overtures
 + creation: LocalDateTime {DateTimeFormat, Past, NotNull}
 + deadline: LocalDateTime {DateTimeFormat, NotNull}
 + paragraph: String {NotBlank}
-+ rangeMoney: Money {NotNull}
++ moneyMin: Money {NotNull, Valid}
++ moneyMax: Money {NotNull, Valid}
 + email: String {Email, NotBlank, Length}
 </panel_attributes>
     <additional_attributes/>
