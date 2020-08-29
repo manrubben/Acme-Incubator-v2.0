@@ -11,6 +11,8 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import org.hibernate.validator.constraints.Length;
+
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,7 +31,7 @@ public class ToolRecords extends DomainEntity {
 	@NotBlank
 	@Length(max = 255)
 	private String				title;
-
+  
 	@NotNull
 	private ActivitySector		activitySector;
 
@@ -53,6 +55,7 @@ public class ToolRecords extends DomainEntity {
 
 	@NotNull
 	private Indication			indication;
+
 
 	@Min(value = -5)
 	@Max(value = 5)
