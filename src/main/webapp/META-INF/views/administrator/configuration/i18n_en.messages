@@ -8,14 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-anonymous.notices.form.label.headerPicture = Header picture:
-anonymous.notices.form.label.title = Title:
-anonymous.notices.form.label.creation = Creation:
-anonymous.notices.form.label.deadline = Deadline:
-anonymous.notices.form.label.body = Body:
-anonymous.notices.form.label.links = Links:
 
-anonymous.notices.list.label.title = Title
+administrator.configuration.form.label.spamWords = Spam Words:
+administrator.configuration.form.label.spamThreshold = Spam Threshold:
+administrator.configuration.form.label.activitySectors = Activity Sectors:
 
-anonymous.notices.form.button.return = Return
+administrator.configuration.form.button.return = Return
 
+administrator.configuration.list.label.spamWords = Spam Words
+administrator.configuration.list.label.spamThreshold = Spam Threshold
+administrator.configuration.list.label.activitySectors = Activity Sectors

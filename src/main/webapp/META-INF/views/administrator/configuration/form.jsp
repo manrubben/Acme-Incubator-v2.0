@@ -1,5 +1,5 @@
 <%--
-- footer-logo.tag
+- form.jsp
 -
 - Copyright (c) 2019 Rafael Corchuelo.
 -
@@ -10,16 +10,15 @@
 - they accept any liabilities with respect to them.
 --%>
 
-<%@tag language="java" 
-	import="java.util.Collection, java.util.ArrayList, java.util.Map, javax.servlet.jsp.tagext.JspFragment" 
-%>
+<%@page language="java"%>
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<%@attribute name="logo" required="true" type="java.lang.String"%>
-							
-<div class="col align-middle">
-	<img src="images/logo.png" alt="Acme Incubator, Inc." class="img-fluid-logo"/>
-	<jsp:doBody/>							
-</div>
+<acme:form>
+	<acme:form-textbox code="administrator.configuration.form.label.spamWords" path="spamWords"/>
+	<acme:form-textbox code="administrator.configuration.form.label.spamThreshold" path="spamThreshold"/>
+	<acme:form-textbox code="administrator.configuration.form.label.activitySectors" path="activitySectors"/>
+
+  	<acme:form-return code="administrator.configuration.form.button.return"/>
+</acme:form>

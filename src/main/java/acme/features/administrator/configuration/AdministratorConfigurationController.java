@@ -1,5 +1,5 @@
 /*
- * AuthenticatedInquiriesController.java
+ * AnonymousUserAccountController.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.inquiries;
+package acme.features.administrator.configuration;
 
 import javax.annotation.PostConstruct;
 
@@ -18,25 +18,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.Inquiries;
+import acme.entities.Configuration;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/authenticated/inquiries/")
-public class AuthenticatedInquiriesController extends AbstractController<Authenticated, Inquiries> {
-
-	// Internal state ---------------------------------------------------------
+@RequestMapping("/administrator/configuration/")
+public class AdministratorConfigurationController extends AbstractController<Administrator, Configuration> {
 
 	@Autowired
-	private AuthenticatedInquiriesListService	listService;
+	private AdministratorConfigurationListService listService;
 
 	@Autowired
-	private AuthenticatedInquiriesShowService	showService;
-
-
-	// Constructors -----------------------------------------------------------
+	private AdministratorConfigurationShowService showService;
 
 	@PostConstruct
 	private void initialise() {
