@@ -21,7 +21,7 @@
 	<acme:form-textbox code="administrator.notices.form.label.creation" path="creation"/>
 	<acme:form-textbox code="administrator.notices.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.notices.form.label.body" path="body"/>
-	<acme:form-url code="administrator.notices.form.label.links" path="links"/>
+	<acme:form-textbox code="administrator.notices.form.label.links" path="links"/>
 	
   	<acme:form-return code="administrator.notices.button.return"/>
 </acme:form>

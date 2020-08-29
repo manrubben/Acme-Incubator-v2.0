@@ -436,4 +436,41 @@ Configuration
 + activitySectors: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1122</x>
+      <y>550</y>
+      <w>242</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Activity Sector
+--
++ Technology
++ Science
++ Arts
++ Business
++ Health
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1122</x>
+      <y>715</y>
+      <w>242</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Indication
+--
++ Open_source
++ Closed_source
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
